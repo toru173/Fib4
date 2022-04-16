@@ -13,12 +13,12 @@ class Fib :
         return self
     
     def __next__(self) :
-        current = self.current
+        output = self.current
         self.current, self.next = self.next, self.current + self.next
         self.num_iterations += 1
         if self.num_iterations > self.max_iterations :
             raise StopIteration
-        return current
+        return output
 
 outstring = ""
 
