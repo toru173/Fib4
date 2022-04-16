@@ -29,7 +29,7 @@ try :
     n = int(input("Please enter a positive integer: "))
     for i in Fib(n) :
         outstring += str(i) + " "
-        if outstring.split("\n")[-1].count(" ") == 4 :
+        if outstring.split("\n")[-1].count(" ") > 3 :
             outstring += "\n"
     print("Output:")
     print(outstring)
