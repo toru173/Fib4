@@ -30,5 +30,5 @@ try :
     print("Output:")
     print(outstring)
 
-except ValueError:
+except ValueError :
     print("Input is not a valid positive integer")
