@@ -1,5 +1,8 @@
 #!/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
 
+# Requests a variable (n) from the user, and prints the fibonacci sequence 
+# for n iterations. Only prints 4 iterations per line
+
 class Fib :
     def __init__(self, max_iterations) :
         self.current = 0
@@ -23,7 +26,8 @@ class Fib :
 outstring = ""
 
 try :
-    for i in Fib(int(input("Please enter a positive integer: "))) :
+    n = int(input("Please enter a positive integer: "))
+    for i in Fib(n) :
         outstring += str(i) + " "
         if outstring.split("\n")[-1].count(" ") == 4 :
             outstring += "\n"
